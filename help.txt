@@ -1,0 +1,51 @@
+Allowed options:
+  -h [ --help ]                 Show commandline options.
+  -g [ --gtp ]                  Enable GTP mode.
+  -t [ --threads ] arg (=4)     Number of threads to use.
+  -p [ --playouts ] arg         Weaken engine by limiting the number of 
+                                playouts. Requires --noponder.
+  -b [ --lagbuffer ] arg (=100) Safety margin for time usage in centiseconds.
+  -l [ --logfile ] arg          File to log input/output to.
+  -q [ --quiet ]                Disable all diagnostic output.
+  -k [ --komiadjust ]           Adjust komi one point in my disadvantage (for 
+                                territory scoring).
+  --noponder                    Disable thinking on opponent's time.
+  --nonets                      Disable use of neural networks.
+  --nobook                      Disable use of the fuseki library.
+  --gpu arg                     ID of the OpenCL device(s) to use (disables 
+                                autodetection).
+  --rowtiles arg (=5)           Split up the board in # tiles.
+
+Leela: list_commands
+= protocol_version
+name
+version
+quit
+known_command
+list_commands
+quit
+boardsize
+clear_board
+komi	贴目
+play	走子‘play B D3’
+genmove	AI走子	‘genmove B’、‘genmove W’
+showboard
+undo
+final_score
+final_status_list
+time_settings
+time_left
+fixed_handicap
+place_free_handicap
+set_free_handicap
+loadsgf
+printsgf
+kgs-genmove_cleanup
+kgs-time_settings
+kgs-game_over
+influence
+mc_score
+mc_winrate
+vn_winrate
+winrate		胜率
+heatmap
